@@ -1,0 +1,41 @@
+Docker is a container technology: a tool for creating and managing container.
+
+container: a standarized unit of code and packages.
+
+why containers? -> why we want independent , standarized "application packages".
+
+1. development environment --> production environment
+2. development environment for employee A --> development environment for employee B
+3. Tools and library required for project A --> tools and Libraried require for project B
+
+
+virtual Machine / virtual OS:
+
+pro: 
+separate environment.
+environment specific cnfigurations are possible 
+environment configuration can be shared and reproduced reliably.
+
+con:
+Redundant duplication , waste of space.
+Performance can be slow , boot times can be long.
+reproducing on another computer server is possible but may still be tricky.
+         
+ docker engine.        
+         '
+ os built-in/Emulated container support    
+     '
+your operating system
+
+
+--------------------------------------
+to build a docker file commands:
+
+1. docker build . //run in directory where docker file is located
+2. docker run ps -3000:3000 imageId // to run a docker image on localhost production
+----------- to stop docker process: 
+
+1. docker ps // it will list all the docker process running
+2. docker stop process_name // it will stop the docker process.
+
+
